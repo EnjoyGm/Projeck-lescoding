@@ -45,7 +45,7 @@ nav {
 }
 
 .biodata {
-	border-color: antiquewhite;
+	background-color: antiquewhite;
 	margin: 50px;
 	border-radius: 24px;
 	font-size: 25px;
@@ -68,4 +68,24 @@ nav {
 
 .biodata .list {
 	padding-left: 150px;
+}
+
+.kontak {
+	background-color: aquamarine;
+	padding-bottom: 25px;
+	margin: 50px;
+	border-radius: 15px;
+	border: 2px red solid;
+	haight: 200px;
+}
+
+.kontak b {
+	background: linear-gradient(90deg, red 50%, blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 35px;
+}
+
+.kontak img:hover {
+	width: 125px;
 }
