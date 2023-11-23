@@ -1,32 +1,59 @@
-boby {
+body {
 	background-color: lightblue;
 	text-align: center;
 	font-family: monospace;
-	padding-battom: 25px;
+	padding-bottom: 25px;
 }
 
 header {
-	background: lightblue;
+	background: lightcoral;
 	color: white;
 	padding: 5px;
 	border-radius: 25px;
 }
 
+/* update tgl 15 nov */
 nav {
-	text-align: center;
-	padding-battom: 35px;
-	font-size: 50px;
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap; 
+    justify-content: flex-start;
 }
+
+nav a {
+	text-decoration: none;
+	color:white;
+	font-size: 25px;
+	margin: 0 5px;
+	padding: 15px;
+	border-radius: 20px;
+}
+
+nav a:hover{
+	background-color: grey;
+}
+
+nav b {
+	font-size: 35px;
+	margin-left: auto;
+	padding: 5px;
+	border-radius: 15px;
+	background-color: white;
+	color: black;
+}
+
+/* end of update tgl 15 nov */
 
 /* row and column */
 .row {
-	display: flex;
+    display: flex;
 }
 
 .column {
-	flex: 50%;
-	padding: 10px;
+    flex: 50%;
+    padding: 10px;
 }
+
 /* end of row and column */
 
 .perkenalan {
@@ -41,19 +68,24 @@ nav {
 
 .perkenalan h4 {
 	text-align: left;
+	font-size: 50px;
+}
+
+.perkenalan p {
+	text-align: left;
 	font-size: 25px;
 }
 
 .biodata {
 	background-color: antiquewhite;
 	margin: 50px;
-	border-radius: 24px;
+	border-radius: 25px;
 	font-size: 25px;
 	padding: 15px;
 }
 
 .biodata .header {
-	background: linerar-gradient(90deg, pink 20%, drakblue);
+	background: linear-gradient(90deg, pink 20%, darkblue);
 	border-radius: 20px;
 	color: white;
 }
@@ -62,7 +94,7 @@ nav {
 	margin: 5px;
 }
 
-.biodata .table {
+.biodata .tabel {
 	font-family: Calibri;
 }
 
@@ -76,16 +108,56 @@ nav {
 	margin: 50px;
 	border-radius: 15px;
 	border: 2px red solid;
-	haight: 200px;
+	height: 200px;
 }
 
 .kontak b {
 	background: linear-gradient(90deg, red 50%, blue);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 	font-size: 35px;
 }
 
 .kontak img:hover {
 	width: 125px;
 }
+
+.tentang {
+	background-color: orangered;
+	padding: 15px;
+	margin: 50px;
+	border-radius: 15px;
+}
+
+.tentang .header {
+	font-size: 50px;
+	color: white;
+}
+
+.tentang .body {
+	background-color: white;
+	padding: 2px;
+	margin: 15px -15px -25px -15px;
+	border-radius: 10px;
+}
+
+.tentang .body p {
+	font-size: 20px;
+	width: 100%;
+}
+
+.tentang .link {
+	padding: 2px;
+	margin: 15px -25px -15px -25px;
+	border-radius: 10px;
+}
+
+.tentang .link img {
+	width: 150px;
+}
+
+.tentang .link img:hover {
+	border:3px solid black;
+	width: 144px;
+}
+
